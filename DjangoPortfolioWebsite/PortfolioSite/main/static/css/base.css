@@ -1,0 +1,79 @@
+/* General resets */
+* {
+    box-sizing: border-box;
+    margin: 0;
+    padding: 0;
+    font-family: "Open Sans", sans-serif;
+  }
+  
+  body {
+    font-family: "Segoe UI", Tahoma, Geneva, Verdana, sans-serif;
+    line-height: 1.6;
+    color: #333;
+    background-color: #f4f4f4;
+    padding: 20px;
+  }
+  
+  a {
+    color: #007bff;
+    text-decoration: none;
+  }
+  
+  a:hover {
+    text-decoration: underline;
+  }
+  
+  /* Header and Navigation Menu */
+  header {
+    display: flex;
+    align-items: center;
+    justify-content: space-around;
+    min-height: 8vh;
+    background-color: rgb(235, 235, 235);
+    color: white;
+  }
+
+  .nav-fullname a{
+    color: rgb(36, 36, 36);
+    letter-spacing: 1px;
+    font-weight: 600;
+  }
+
+  .nav-fullname a:hover {
+    text-decoration: none;
+  }
+  
+  .nav-menu {
+    width: 25%;
+    list-style: none;
+    display: flex;
+    justify-content: space-around;
+    letter-spacing: 1px;
+    font-weight: 600;
+  }
+  
+  .nav-menu li {
+    padding: 30px 0;
+  }
+  
+  .nav-menu a {
+    color: rgb(36, 36, 36);
+    transition: color 0.3s ease;
+  }
+  
+  .nav-menu a:hover {
+    color: #a0a0a0;
+  }
+  
+  /* Main Content Area */
+  main {
+    margin-top: 20px;
+  }
+  
+  /* Responsive Design */
+  @media (max-width: 768px) {
+    .nav-menu {
+      flex-direction: column;
+      gap: 10px;
+    }
+  }
